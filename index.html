@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-entity id="cameraCursor" position="0 0 0">
+                <a-camera>
+                    <a-cursor
+                        color="black"
+                        geometry="primitive: ring; radiusInner: .02; radiusOuter: .04"
+                    >
+                    </a-cursor>
+                </a-camera>
+            </a-entity>
+            
+            <a-assets>
+                <img id="mrbudiImage" src="images/venice.jpeg">
+            </a-assets>
+            
+            <a-entity id="homepage" visible="true">
+                <a-sky src="#mrbudiImage"></a-sky>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
